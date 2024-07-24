@@ -23,6 +23,10 @@ export default function Home() {
                     <li><a href="">いいね</a></li>
                 </ul>
             </div>
+
+            <div className={styles.status}>
+            
+            </div>
         </>
     )
 }

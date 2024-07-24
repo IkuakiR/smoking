@@ -11,3 +11,26 @@
     }
 }
 
+.nav {
+    width: 100vw;
+    height: 30px;
+    padding: 0 15px;
+    border-bottom: 1px solid #c2c2c2;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: #a5a5a5;
+                font-size: 11px; //全称セレクタにfont-size: 62.5%が付けられなかったため一旦実数値にて指定
+                line-height: 30px;
+            }
+        }
+    }
+}
+
