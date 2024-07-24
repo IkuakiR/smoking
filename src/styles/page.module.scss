@@ -1,36 +1,130 @@
 .header {
-    width: 100vw;
-    height: 250px;
-    border: 1px solid #000;
+  position: relative;
+  width: 100vw;
+  height: 250px;
+  background: url("https://aespa-official.jp/aspect/wp-content/themes/hotmess/img/slider/02.webp")
+    no-repeat;
+  background-size: cover;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.3;
+  }
+
+  .prev {
+    background: #64646489;
+    display: block;
+    width: 2rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+  }
+
+  .profileWrap {
+    position: absolute;
+    bottom: 0.5rem;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    z-index: 3;
+    padding: 0 1rem;
+    gap: 1rem;
+    height: 5rem;
 
     .icon {
-        width: 65px;
-        height: 65px;
-        border: 1px solid #000;
-        border-radius: 50%;
+      height: 100%;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      background: url("https://pin10.work/wp-content/uploads/2020/07/8-4-940x509.png")
+        no-repeat;
+      background-size: 180%;
+      background-position: center center;
     }
+
+    .userName {
+      font-weight: normal;
+      font-size: 1.2rem;
+      line-height: 1.4;
+    }
+
+    .smokeInformation {
+      display: flex;
+      gap: 0.6rem;
+      font-size: 0.8rem;
+      line-height: 1;
+
+      .quitSmoke {
+        &::before {
+          content: "";
+          display: inline-block;
+          aspect-ratio: 1/1;
+          background: #fff;
+          width: 0.8rem;
+        }
+      }
+
+      .bland {
+        &::before {
+          content: "";
+          display: inline-block;
+          aspect-ratio: 1/1;
+          background: #fff;
+          width: 0.8rem;
+        }
+      }
+    }
+    .profileText {
+      font-size: 0.8rem;
+      margin-top: 0.4rem;
+      line-height: 1;
+    }
+    .location {
+      font-size: 0.7rem;
+      line-height: 1;
+    }
+  }
 }
 
 .nav {
-    width: 100vw;
-    height: 30px;
-    padding: 0 15px;
-    border-bottom: 1px solid #c2c2c2;
+  width: 100%;
+  padding-top: 0.4rem;
+  height: 2.4rem;
 
-    ul {
-        display: flex;
-        justify-content: space-between;
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 
-        li {
-            list-style: none;
+    li {
+      list-style: none;
+      width: 25%;
+      border-bottom: 1px solid #c2c2c2;
 
-            a {
-                text-decoration: none;
-                color: #a5a5a5;
-                font-size: 11px; //全称セレクタにfont-size: 62.5%が付けられなかったため一旦実数値にて指定
-                line-height: 30px;
-            }
-        }
+      button {
+        width: 100%;
+        text-decoration: none;
+        color: #a5a5a5;
+        font-size: 11px; //全称セレクタにfont-size: 62.5%が付けられなかったため一旦実数値にて指定
+        line-height: 30px;
+      }
+
+      button.link {
+        border-bottom: 1px solid #1093dc;
+        font-weight: bold;
+        color: #000;
+      }
     }
+  }
 }
 
+.img {
+  width: 100%;
+  object-fit: cover;
+}

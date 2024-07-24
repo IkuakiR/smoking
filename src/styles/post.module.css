@@ -1,0 +1,69 @@
+.container {
+    font-family: Arial, sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.avatar {
+    width: 3rem;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    background: url("https://pin10.work/wp-content/uploads/2020/07/8-4-940x509.png") no-repeat;
+    background-size: 190%;
+    background-position: center center;
+    margin-right: 16px;
+}
+
+.userInfo {
+    flex-grow: 1;
+}
+
+.username {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 12px;
+    color: #666;
+}
+
+.pin {
+    font-size: 18px;
+}
+
+.content {
+    margin-bottom: 16px;
+}
+
+.image {
+    margin-bottom: 16px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.action {
+    display: flex;
+    align-items: center;
+    color: #666;
+}
+
+.action span {
+    margin-right: 8px;
+}
